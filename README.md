@@ -4,7 +4,7 @@
     
 ![Badge](https://img.shields.io/badge/status-UNDER_CONSTRUCTION-%237159c1?)
 ![Badge](https://img.shields.io/badge/license-MIT-ff69b4)
-![Badge](https://img.shields.io/badge/live-%237159c1?)
+<a href="https://ulikgames.github.io/league-of-legends/login/index.html">![Badge](https://img.shields.io/badge/live-%237159c1?)</a>
     
 </div>
 
