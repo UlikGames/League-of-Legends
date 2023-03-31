@@ -63,4 +63,4 @@ This project developed with:
 
 ## 👑 Contributors
 
-Thanks for noone helping me in this project.
+Thank <a href="https://github.com/AdilMahmudlu">AdilMahmudlu<a> for nothing. He did nothing. Just wanted to point out that he did nothing. And did I mention that he did nothing? Yeah, he was not helpful at all. Also note that he did nothing. Thank him again.
