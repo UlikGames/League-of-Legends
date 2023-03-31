@@ -61,6 +61,6 @@ This project developed with:
 
 <hr>
 
-## 👑 Contribuidores
+## 👑 Contributors
 
 Thanks for noone helping me in this project.
