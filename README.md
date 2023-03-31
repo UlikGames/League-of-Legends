@@ -4,12 +4,13 @@
     
 ![Badge](https://img.shields.io/badge/status-UNDER_CONSTRUCTION-%237159c1?)
 ![Badge](https://img.shields.io/badge/license-MIT-ff69b4)
-<a href="https://ulikgames.github.io/league-of-legends/login/index.html">![Badge](https://img.shields.io/badge/live-%237159c1?)</a>
     
 </div>
 
 <h1 align="center">League of Legends</h1>
 <p align="center">A clone of our dear little League of Legends</p>
+<p align="center">username: username</p>
+<p align="center">password: password</p>
 
 ## 📷 Screenshots
 
