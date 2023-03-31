@@ -1,0 +1,540 @@
+@import "../global.css";
+
+/* IMPORTING EXTERNAL FONTS */
+@font-face {
+    font-family: "Beaufort for LOL";
+    font-size: 700;
+    src: url("../BeaufortForLOL/beaufortforlol-heavy.otf");
+}
+
+@font-face {
+    font-family: "Beaufort for LOL";
+    font-size: 500;
+    src: url("../BeaufortForLOL/beaufortforlol-medium.otf");
+}
+
+.main {
+    background-color: #010a13;
+    font-family: "Beaufort for LOL";
+    font-weight: 700;
+    font-size: 30px;
+
+}
+
+.main.client {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 223px;
+    grid-template-areas:
+        "header header"
+        "general social";
+    grid-template-rows: max-content;
+}
+
+.general {
+    width: 100%;
+    height: 100%;
+    background-color: #010a13;
+    grid-area: general;
+    overflow: hidden;
+}
+
+.header-client {
+    grid-area: header;
+    height: 68px;
+    padding: 0 1rem;
+    border-bottom: 1px solid #343d44;
+    border-top: 3px solid #6f5d39;
+    background-color: #010a13;
+}
+
+.header-client a,
+.header-client h6,
+.header-client img:nth-of-type(2) {
+    margin: 0 0.5rem;
+}
+
+.header-client img:nth-of-type(1) {
+    margin-right: 0.6rem;
+}
+
+.header-client h6 {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.header-client button {
+    height: 100%;
+    color: #d2c195;
+    background-color: transparent;
+    border: none;
+}
+
+.header-client button:hover {
+    transition: 3s;
+    background: linear-gradient(transparent, #c2bbb24d);
+}
+
+.icons {
+    margin-left: 90px;
+}
+
+.icons img {
+    margin: 0 0.5rem 0.5rem;
+}
+
+.start-button {
+    position: relative;
+}
+
+.active-1 {
+    position: relative;
+    background: linear-gradient(transparent, #c2bbb24d);
+}
+
+.active-1::before {
+    content: " ";
+    background-image: url(../client/img/header/decorator.svg);
+    position: absolute;
+    height: 13px;
+    width: 25px;
+    top: -2px;
+    left: calc(50% - 12.5px);
+}
+
+.header {
+    position: absolute;
+    top: 68px;
+    align-items: center;
+    justify-content: space-between;
+    width: 78.2%;
+    height: 50px;
+    padding: 1.2rem;
+    background: linear-gradient(#010a1bc2, transparent);
+    font-family: "Beaufort for LOL";
+    font-weight: 500;
+    font-size: 12px;
+    color: #d2c195;
+    z-index: 5;
+}
+
+.header-start {
+    background: linear-gradient(#010a1bc2, transparent);
+}
+
+.header-highlights,
+.header-champions {
+    background-color: #010a13;
+}
+
+.header-highlights-buttons button {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #3f5996;
+    color: #d2c195;
+    background-color: #1e2328;
+    border: 2px solid #c8a765;
+}
+
+.header-highlights-buttons img {
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    margin-bottom: 2px;
+}
+
+.header-highlights-buttons button:first-of-type,
+.prime button {
+    width: initial;
+    padding: 0.1rem 1rem;
+    border-radius: initial;
+    border: none;
+    background-color: #1e2328;
+    border: 2px solid #c8a765;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #d2c195;
+    margin-top: 0;
+}
+
+.header-highlights li:first-of-type {
+    border-bottom: 1px solid #f0e7cf;
+    color: #f0e7cf;
+}
+
+.header-start li:nth-of-type(2) {
+    border-bottom: 1px solid #f0e7cf;
+    color: #f0e7cf;
+}
+
+.header-champions li:nth-of-type(2) {
+    border-bottom: 1px solid #f0e7cf;
+    color: #f0e7cf;
+}
+
+.header li:hover {
+    color: #f0e7cf;
+}
+
+.decorator {
+    width: 1px;
+    height: 40px;
+    background-color: rgba(233, 198, 132, 0.274);
+    margin: 0 1.4rem;
+    margin-left: 0.5rem;
+    border-radius: 170%;
+}
+
+.carousel-start {
+    position: absolute;
+    top: 100px;
+    left: 45%;
+}
+
+.developed {
+    width: 390px;
+    padding: 2rem;
+    border-radius: 40px;
+    background: rgba(177, 177, 177, 0.295);
+    -webkit-backdrop-filter: blur(23px);
+    backdrop-filter: blur(23px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    text-shadow: 1px 2px 1px #00000049;
+}
+
+.info-devs {
+    display: flex;
+    justify-content: center;
+}
+
+.devs {
+    width: 50%;
+    text-align: center;
+}
+
+.devs h3 {
+    font-size: 19px;
+}
+
+.rights {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.essence-blue,
+.rp {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.essence-blue::before {
+    content: url(./img/header/essence-blue.png);
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-left: 2px;
+}
+
+.rp::before {
+    content: url(./img/header/rp.png);
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+/* social */
+.social {
+    grid-area: social;
+    display: grid;
+    grid-template-rows: 22px auto 37px;
+    align-items: flex-start;
+    max-width: 100%;
+    height: 100%;
+    background-color: #010a13;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: #4b5258;
+    overflow-y: scroll;
+}
+
+.social header {
+    padding-left: 10px;
+    font-family: "Beaufort for LOL";
+    font-weight: 700;
+    font-size: 13px;
+    color: #d1bd8f;
+}
+
+.social header img {
+    margin: 2px;
+}
+
+.wrapper-folders {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.btn {
+    width: 100%;
+    padding: 5px 10px;
+    border: none;
+    font-family: "Beaufort for LOL";
+    font-weight: 700;
+    font-size: 12px;
+    text-align: left;
+    color: #929994;
+}
+
+.btn:hover,
+.btn:focus {
+    color: #929994;
+}
+
+.social-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 12px;
+}
+
+.social-box p {
+    margin: 0;
+}
+
+.social-box p:last-of-type {
+    font-size: 12px;
+}
+
+.social-img {
+    box-sizing: border-box;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid #976f3d;
+}
+
+.social footer > * {
+    width: 100%;
+    margin: 2px;
+    padding: 0.3rem 0.46rem;
+    border: 1px solid #aa814a;
+    background-color: #1e2328;
+    font-family: "Beaufort for LOL";
+}
+
+/* social - status */
+.status {
+    position: relative;
+}
+
+.online {
+    color: #057733;
+}
+
+.online::before {
+    content: "";
+    position: absolute;
+    left: -19px;
+    bottom: 4px;
+    width: 15px;
+    height: 15px;
+    background-size: cover;
+    background-image: url(./img/social/status/online.svg);
+}
+
+.header-client .online::before {
+    position: initial;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 3px;
+    vertical-align: top;
+    background-size: contain;
+}
+
+.blue {
+    color: #0ab4b0;
+}
+
+.blue::before {
+    content: "";
+    position: absolute;
+    left: -19px;
+    bottom: 4px;
+    width: 15px;
+    height: 15px;
+    background-size: cover;
+    background-image: url(./img/social/status/in-party.svg);
+}
+
+.offline::before {
+    content: "";
+    position: absolute;
+    left: -19px;
+    bottom: 4px;
+    width: 15px;
+    height: 15px;
+    background-size: cover;
+    background-image: url(./img/social/status/offline.svg);
+}
+
+.lol-plus::before {
+    content: "";
+    position: absolute;
+    left: -19px;
+    bottom: 4px;
+    width: 15px;
+    height: 12px;
+    background-size: cover;
+    background-image: url(./img/social/status/lol-plus.svg);
+}
+
+.absent::before {
+    content: "";
+    position: absolute;
+    left: -19px;
+    bottom: 4px;
+    width: 15px;
+    height: 15px;
+    background-size: cover;
+    background-image: url(./img/social/status/absent.svg);
+}
+
+/* STORE */
+.menu-filtros {
+    max-width: 180px;
+    width: 100%;
+    background-color: transparent;
+}
+
+.card {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 1px;
+    border: 1px solid rgba(128, 128, 128, 0.473);
+    background-color: rgb(0, 13, 24);
+    font-family: Roboto;
+    text-align: center;
+    border-radius: 0;
+}
+
+.card-info-bg {
+    position: absolute;
+    bottom: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 99%;
+    height: 40%;
+    padding: 2px;
+    background: linear-gradient(transparent, #000);
+}
+
+.card-info-bg span {
+    display: flex;
+    gap: 14px;
+}
+
+.card-info-bg span p {
+    color: #ac957e;
+}
+
+.card-info-bg p {
+    color: #fff;
+}
+
+.price-rp::before {
+    content: url("./img/store/rp-12.png");
+    margin: 6px;
+    vertical-align: middle;
+}
+
+.price-eb::before {
+    content: url("./img/store/essence-blue-12.png");
+    vertical-align: middle;
+    margin: 4px;
+    height: 10px;
+}
+
+/* scrollbars */
+.grid-highlights::-webkit-scrollbar,
+#grid-champions::-webkit-scrollbar,
+.social::-webkit-scrollbar {
+    width: 0;
+}
+
+.wrapper-folders::-webkit-scrollbar {
+    width: 6px;
+}
+
+.wrapper-folders::-webkit-scrollbar-track {
+    background: #ffffff00;
+}
+
+.wrapper-folders::-webkit-scrollbar-thumb {
+    background-color: #1d2327;
+    border-radius: 20px;
+    border: 7px solid #ffffff00;
+}
+
+/* selo de promoção */
+.promotion-img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.promotion-25:before,
+.promotion-30:before,
+.promotion-40:before,
+.promotion-45:before,
+.promotion-50:before,
+.promotion-55:before,
+.promotion-60:before {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    color: #f0f0f0;
+    z-index: 5;
+    font-weight: 400;
+    font-family: initial;
+    font-size: 13px;
+}
+
+.promotion-25:before {
+    content: "-25%";
+}
+
+.promotion-30:before {
+    content: "-30%";
+}
+
+.promotion-40:before {
+    content: "-40%";
+}
+
+.promotion-45:before {
+    content: "-45%";
+}
+
+.promotion-50:before {
+    content: "-50%";
+}
+
+.promotion-55:before {
+    content: "-55%";
+}
+
+.promotion-60:before {
+    content: "-60%";
+}
+
+.links-disabled {
+    cursor: not-allowed !important;
+}
